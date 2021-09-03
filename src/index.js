@@ -4,15 +4,20 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Header from './Header';
 import Contenedor from './Contenedor';
+import PersonajeContenedor from './PersonajeContenedor';
 
 ReactDOM.render(
     <Header />,
     document.getElementById('header')
 );
 
+// ReactDOM.render(
+//     <Contenedor />,
+//     document.getElementById('root')
+// );
 ReactDOM.render(
-    <Contenedor />,
-    document.getElementById('root')
+    <PersonajeContenedor />,
+    document.getElementById('personaje')
 );
 
 
