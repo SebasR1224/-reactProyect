@@ -1,15 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Header from './Header';
+import ComponentePrueba from './ComponentePrueba';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Header />,
+    document.getElementById('header')
 );
+
+ReactDOM.render(
+    <ComponentePrueba 
+    nombre="maria"
+    edad="12"
+    genero = "F"
+
+     />,
+    document.getElementById('root')
+);
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
