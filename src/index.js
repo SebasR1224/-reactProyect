@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Header from './Header';
-import ComponentePrueba from './ComponentePrueba';
+import Contenedor from './Contenedor';
 
 ReactDOM.render(
     <Header />,
@@ -11,12 +11,7 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-    <ComponentePrueba 
-    nombre="maria"
-    edad="12"
-    genero = "F"
-
-     />,
+    <Contenedor />,
     document.getElementById('root')
 );
 

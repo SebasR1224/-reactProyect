@@ -1,10 +1,10 @@
 import React from "react";
 
 const Header = () =>(
-    <div>
-        <header>
-            <h1>Aplicación</h1>
-        </header>
-    </div>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-md">
+            <a href="#" className="navbar-brand">Estudiante App</a>
+        </div>
+    </nav>
 );
 export default Header;
