@@ -15,10 +15,17 @@ class Formulario extends Component {
             nombre: e.target.value
         });
     }
+
+    componentDidUpdate(prevProps, prevState){
+        console.log(prevProps);
+        console.log(prevState);
+        console.log("_______________________________________");
+    }
+
     //Retorna la estructura la estructura del componente el codigo como tal
     render(){
         return(
-            <div>
+            <div id="contenedor">
                 <h1></h1>
                 <form action="">
                     <label htmlFor="">Nombre</label><br />
@@ -29,6 +36,12 @@ class Formulario extends Component {
             </div>
         )
     }
+
+    componentDidMount(){
+        let elemento = document.getElementById("contenedor");
+        console.log(elemento);
+    }
+
 
 }
 
