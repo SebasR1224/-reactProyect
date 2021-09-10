@@ -11,14 +11,14 @@ ReactDOM.render(
     document.getElementById('header')
 );
 
-// ReactDOM.render(
-//     <Contenedor />,
-//     document.getElementById('root')
-// );
 ReactDOM.render(
-    <PersonajeContenedor />,
-    document.getElementById('personaje')
+    <Contenedor />,
+    document.getElementById('root')
 );
+// ReactDOM.render(
+//     <PersonajeContenedor />,
+//     document.getElementById('personaje')
+// );
 
 
 
