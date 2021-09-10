@@ -1,7 +1,6 @@
 import React from "react";
-
 import Estudiante from "./Estudiante";
-import Formulario from "./Formulario";
+
 
 const estudiantes = [
     {
@@ -39,9 +38,8 @@ const estudiantes = [
 const Contenedor = () => (
     <>
         {
-            //estudiantes.map(c => <Estudiante nombre={c.nombre} edad={c.edad} genero={c.genero}/>)
+            estudiantes.map(c => <Estudiante nombre={c.nombre} edad={c.edad} genero={c.genero}/>)
         }
-        <Formulario/>
     </>
 );
 export default Contenedor;
