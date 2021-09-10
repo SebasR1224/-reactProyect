@@ -1,5 +1,6 @@
-import React from "react";
-import Personaje from "./Personaje";
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const personajes = [
     {
@@ -44,11 +45,36 @@ const personajes = [
     }
 ]
 
-const PersonajeContenedor = () =>(
-    <>
+const DetallePersonaje = ({match}) => {
+    let personaje = personajes.filter(c => c.id === parseInt(match.params.id))[0]
+
+    return(
+        <>
         {
-            personajes.map(c => <Personaje nombre={c.nombre} descripcion={c.descripcion} foto={c.foto} id={c.id}/>)
+            personaje ? ( 
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm-6">
+                            <div className="card">
+                                <div className="card-body">
+                                    <img src={personaje.foto}  width="200px"/>
+                                    <h5 className="card-title">{personaje.nombre}</h5>
+                                    <p className="card-text">Edad: {personaje.edad} </p>
+                                    <p className="card-text">Genero: {personaje.genero} </p>
+                                    <p className="card-text">Descripción: {personaje.descripcion} </p>
+                                </div>
+                            </div>
+                        </div>         
+                    </div>
+                </div>
+            ) : 
+            <h1>Simpson no encontrado</h1>
         }
-    </>
-);
-export default PersonajeContenedor;
+            <Link to={`/personajes`}>Ver todos</Link>
+        </>
+    );
+   
+};
+    
+
+export default DetallePersonaje;

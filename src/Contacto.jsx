@@ -6,9 +6,7 @@ import Header from "./Header";
 const Contacto = () => (
     <>
         {/* <Formulario/> */}
-        <Header/>
         <FormularioContacto />
-        <Footer/>
     </>
 );
 export default Contacto;
