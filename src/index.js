@@ -11,16 +11,16 @@ ReactDOM.render(
     document.getElementById('header')
 );
 
-ReactDOM.render(
-    <Home />,
-    document.getElementById('home')
-);
+// ReactDOM.render(
+//     <Home />,
+//     document.getElementById('home')
+// );
 
 
-ReactDOM.render(
-    <Footer />,
-    document.getElementById('footer')
-);
+// ReactDOM.render(
+//     <Footer />,
+//     document.getElementById('footer')
+// );
 
 
 

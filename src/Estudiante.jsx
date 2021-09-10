@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
-
-const Estudiante  = ({nombre, edad, genero}) => (
+import { Link } from 'react-router-dom';
+const Estudiante  = ({nombre, edad, genero, id}) => (
     <>
         <div className="container">
             <div className="row">
@@ -11,6 +11,7 @@ const Estudiante  = ({nombre, edad, genero}) => (
                             <h5 className="card-title">{nombre}</h5>
                             <p className="card-text">Edad: {edad} </p>
                             <p className="card-text">Genero: {genero} </p>
+                            <p><Link to={`/estudiantes/${id}`}>Ver detalle</Link></p>
                         </div>
                     </div>
                 </div>         
