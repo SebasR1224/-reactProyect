@@ -45,31 +45,42 @@ const estudiantes = [
     },
 ]
 
-const DetalleEstudiante = ({match}) => {
-    let estudiante = estudiantes.filter(c => c.id === parseInt(match.params.id))[0]
+const DetalleEstudiante = ({match, location, history}) => {
 
+    console.log(history)
+
+    let estudiante = estudiantes.filter(c => c.id === parseInt(match.params.id))[0]
     return(
         <>
         {
             estudiante ? ( 
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-6">
-                            <div className="card">
+                        <div className="col-sm-6 offset-3">
+                            <div className="card mb-3 ">
                                 <div className="card-body">
-                                    <h5 className="card-title">{estudiante.nombre}</h5>
-                                    <p className="card-text">Edad: {estudiante.edad} </p>
-                                    <p className="card-text">Genero: {estudiante.genero} </p>
-                                    <p className="card-text">Genero: {estudiante.grado} </p>
+                                    <div className="row">
+                                        <h6 className="text-center p-3">Identificación {estudiante.id}</h6>
+                                        <div className="col-md-6">
+                                            <h5 className="card-title text-uppercase">{estudiante.nombre}</h5>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <p className="card-text">Edad: {estudiante.edad}</p>
+                                            <p className="card-text">Genero: {estudiante.genero}</p>
+                                            <p className="card-text">Grado: {estudiante.grado}</p>
+                                        </div>     
+                                    </div>      
                                 </div>
                             </div>
-                        </div>         
+                            <div>
+                                <Link className="btn btn-sm btn-primary" to={`/estudiantes`}>Ver todos</Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             ) : 
             <h1>Estudiante no encontrado</h1>
         }
-            <Link to={`/estudiantes`}>Ver todos</Link>
         </>
     );
    

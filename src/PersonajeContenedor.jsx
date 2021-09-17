@@ -24,7 +24,7 @@ const personajes = [
         "edad": 24,
         "genero": "M",
         "descripcion": "Bartholomew Jojo Simpson (En Hispanoamérica Bartolomeo Jay Simpson Bouvier) es uno de los personajes principales de la serie animada Los Simpson. En inglés, su voz es interpretada por Nancy Cartwright.",
-        "foto": "https://m.media-amazon.com/images/I/51rhATa0AdL._AC_SX425_.jpg"
+        "foto": "https://tvazteca.brightspotcdn.com/dims4/default/ed61af2/2147483647/strip/true/crop/1920x1080+0+0/resize/968x545!/format/jpg/quality/80/?url=https%3A%2F%2Ftvazteca.brightspotcdn.com%2F1a%2F0d%2F6284b42a48b7809c1a226f51726a%2Fsimpson-7.png"
     },
     {
         "id": 4,
@@ -40,7 +40,7 @@ const personajes = [
         "edad": 24,
         "genero": "M",
         "descripcion": "Margaret Simpson, conocida como Maggie Simpson, es un personaje ficticio de la serie de televisión de dibujos animados Los Simpson. Es la tercera hija del matrimonio protagonista, Homer y Marge Simpson, y la más joven de ellos. Sus hermanos mayores son Bart y Lisa Simpson.",
-        "foto": "https://i.pinimg.com/originals/47/f9/db/47f9dbca7fa1b093c5f1c3153b1cc32b.gif"
+        "foto": "https://img.discogs.com/maXf1jvW1PIBv9KxoPQfoFyIDkA=/550x514/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2633129-1423414884-6779.jpeg.jpg"
     }
 ]
 

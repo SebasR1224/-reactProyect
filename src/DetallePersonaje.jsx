@@ -25,7 +25,7 @@ const personajes = [
         "edad": 24,
         "genero": "M",
         "descripcion": "Bartholomew Jojo Simpson (En Hispanoamérica Bartolomeo Jay Simpson Bouvier) es uno de los personajes principales de la serie animada Los Simpson. En inglés, su voz es interpretada por Nancy Cartwright.",
-        "foto": "https://m.media-amazon.com/images/I/51rhATa0AdL._AC_SX425_.jpg"
+        "foto": "https://tvazteca.brightspotcdn.com/dims4/default/ed61af2/2147483647/strip/true/crop/1920x1080+0+0/resize/968x545!/format/jpg/quality/80/?url=https%3A%2F%2Ftvazteca.brightspotcdn.com%2F1a%2F0d%2F6284b42a48b7809c1a226f51726a%2Fsimpson-7.png"
     },
     {
         "id": 4,
@@ -41,36 +41,43 @@ const personajes = [
         "edad": 24,
         "genero": "M",
         "descripcion": "Margaret Simpson, conocida como Maggie Simpson, es un personaje ficticio de la serie de televisión de dibujos animados Los Simpson. Es la tercera hija del matrimonio protagonista, Homer y Marge Simpson, y la más joven de ellos. Sus hermanos mayores son Bart y Lisa Simpson.",
-        "foto": "https://i.pinimg.com/originals/47/f9/db/47f9dbca7fa1b093c5f1c3153b1cc32b.gif"
+        "foto": "https://img.discogs.com/maXf1jvW1PIBv9KxoPQfoFyIDkA=/550x514/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-2633129-1423414884-6779.jpeg.jpg"
     }
 ]
-
 const DetallePersonaje = ({match}) => {
     let personaje = personajes.filter(c => c.id === parseInt(match.params.id))[0]
-
     return(
         <>
         {
             personaje ? ( 
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <img src={personaje.foto}  width="200px"/>
-                                    <h5 className="card-title">{personaje.nombre}</h5>
-                                    <p className="card-text">Edad: {personaje.edad} </p>
-                                    <p className="card-text">Genero: {personaje.genero} </p>
-                                    <p className="card-text">Descripción: {personaje.descripcion} </p>
-                                </div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-6 offset-3">
+                        <div className="card mb-3 ">
+                            <div className="card-body">
+                                <div className="row">
+                                    <h6 className="text-center p-3"><strong>Identificación</strong> {personaje.id}</h6>
+                                    <div className="col-md-6">
+                                        <img src={personaje.foto}  width="100%"/>
+                                        <h5 className="card-title text-uppercase">{personaje.nombre}</h5>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <p className="card-text"><strong>Edad:</strong> {personaje.edad}</p>
+                                        <p className="card-text"><strong>Genero:</strong> {personaje.genero}</p>
+                                        <p className="card-text"><strong>Descripción:</strong> {personaje.descripcion}</p>
+                                    </div>     
+                                </div>      
                             </div>
-                        </div>         
+                        </div>
+                        <div>
+                            <Link className="btn btn-sm btn-primary" to={`/personajes`}>Ver todos</Link>
+                        </div>
                     </div>
                 </div>
+            </div>
             ) : 
             <h1>Simpson no encontrado</h1>
         }
-            <Link to={`/personajes`}>Ver todos</Link>
         </>
     );
    

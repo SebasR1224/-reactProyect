@@ -7,15 +7,12 @@ import PersonajeContenedor from './PersonajeContenedor';
 import DetalleEstudiante from './DetalleEstudiante'
 import DetallePersonaje from './DetallePersonaje';
 import Home from './Home';
-import MainMenu from './MainMenu';
 import Footer from './Footer';
 
 function App() {
   return (
    <Router>
-     
      <Header />
-     <MainMenu />
       <Switch>
           <Route path="/" exact component={ Home } />
           <Route path="/estudiantes" exact component={ Contenedor } />

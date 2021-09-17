@@ -25,23 +25,23 @@ class FormularioContacto extends Component {
                                 <legend className="text-center header">Formulario de contacto</legend>
 
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                                    <label htmlFor="exampleFormControlInput1" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" />
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+                                    <label htmlFor="exampleFormControlInput1" class="form-label">Asunto</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Asunto" />
                                 </div>    
 
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                                    <label htmlFor="exampleFormControlInput1" class="form-label">Correo</label>
                                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <label htmlFor="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
 
                                 <div className="form-group">
@@ -53,10 +53,10 @@ class FormularioContacto extends Component {
                         </form>
                     </div>
                 </div>
-                <h3>{`Nombre ${this.state.nombre}`}</h3>
+                {/* <h3>{`Nombre ${this.state.nombre}`}</h3>
                 <h3>{`Correo ${this.state.correo}`}</h3>
                 <h3>{`Asunto ${this.state.asunto}`}</h3>
-                <h3>{`Mensaje ${this.state.mensaje}`}</h3>
+                <h3>{`Mensaje ${this.state.mensaje}`}</h3> */}
             </div>
         </div> 
         )

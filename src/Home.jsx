@@ -73,7 +73,7 @@ const Home = () =>(
             <div className="col-lg-6 blog-bg">
               <div className="col-lg-4 centered">
                 <br />
-                <p><img className="img img-circle" src="images/team/team04.jpg" width="60px" height="60px" /></p>
+                <p><img className="img img-circle" src="https://www.wallpapertip.com/wmimgs/45-450492_background-1920-by-1080.jpg" width="60px" height="60px" /></p>
                 <h4>Jaye Smith</h4>
                 <h5>Published Aug 30.</h5>
               </div>
@@ -88,7 +88,7 @@ const Home = () =>(
             <div className="col-lg-6 blog-bg">
               <div className="col-lg-4 centered">
                 <br />
-                <p><img className="img img-circle" src="images/team/team03.jpg" width="60px" height="60px" /></p>
+                <p><img className="img img-circle" src="https://www.profesionalreview.com/wp-content/uploads/2019/08/JM9271-China-desarrolla-una-GPU-con-el-rendimiento-de-la-GTX-1080.jpg" width="60px" height="60px" /></p>
                 <h4>Michele Lampa</h4>
                 <h5>Published Aug 28.</h5>
               </div>
