@@ -1,5 +1,5 @@
 import React from "react";
-import Personaje from "./Personaje";
+import Personaje from "../Molecules/Personaje";
 
 const personajes = [
     {
@@ -32,7 +32,7 @@ const personajes = [
         "edad": 24,
         "genero": "M",
         "descripcion": "Lisa Marie Simpson​​ es un personaje de la serie de televisión de dibujos animados Los Simpson. Es la hija mediana de Homer y Marge Simpson y hermana de Bart y Maggie. Goza de notable protagonismo y complejidad en la serie. ... ​ En la versión española, el personaje es doblado por Isacha Mengibar.",
-        "foto": "https://64.media.tumblr.com/2e4893e0b097ac08dd3291e2650bdbb3/2c527925f4094a39-18/s540x810/3bd484f00633a1da1def3ed0704d9a12c28db0f6.jpg"
+        "foto": "http://pm1.narvii.com/6883/30252478f55841095fa92be1998492a20a54b818r1-500-500v2_00.jpg"
     },
     {
         "id":5, 

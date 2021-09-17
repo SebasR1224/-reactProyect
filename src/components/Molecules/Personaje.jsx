@@ -8,7 +8,7 @@ const Personaje = ({nombre, descripcion, foto, id}) =>(
             <div className="card-body">
                 <div className="row">
                     <div className="col-md-6">
-                        <img src={foto}  width="100%"/>
+                        <img src={foto} className="rounded-circle" width="100%"/>
                         <h5 className="card-title text-uppercase text-cernter">{nombre}</h5>
                     </div>
                     <div className="col-md-6">

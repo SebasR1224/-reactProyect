@@ -1,5 +1,5 @@
 import React from "react";
-import FormularioContacto from "./FormularioContacto";
+import FormularioContacto from "../Molecules/FormularioContacto";
 const Contacto = () => (
     <>
         {/* <Formulario/> */}

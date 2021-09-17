@@ -23,6 +23,7 @@ const Estudiante  = ({nombre, edad, genero, id}) => (
     </div>
 </div>
 );
+
 Estudiante.propTypes = {
     nombre: PropTypes.string,
     edad: PropTypes.number,
