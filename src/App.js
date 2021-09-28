@@ -8,6 +8,7 @@ import DetalleEstudiante from './components/Organisms/DetalleEstudiante';
 import DetallePersonaje from './components/Organisms/DetallePersonaje';
 import Home from './components/Pages/Home';
 import Footer from './components/Molecules/Footer';
+import DatosApi from './components/Molecules/DatosApi';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contacto" exact component={ Contacto } />
           <Route path="/personajes" exact component={ PersonajeContenedor } />
           <Route path="/personajes/:id" exact component={ DetallePersonaje } />
+          <Route path="/datos_api" exact component={ DatosApi } />
           <Route component={ 
             ()=>(
               <h1>Pagina no encontrada</h1>
